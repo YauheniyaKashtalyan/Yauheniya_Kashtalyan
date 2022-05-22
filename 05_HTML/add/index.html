@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2 align="center">Заполните анкету</h2>
+    <form name="DATA_FORM" action="http://fe.it-academy.by/TestForm.php" method="post">
+       <fieldset>
+           <legend>Личные данные</legend>
+           <input type="text" name="Data1" maxlength="25" pattern="[А-Яа-я]{1,25}" required autofocus placeholder="Фамилия"> text: Только кирилица, без пробелов, длина поля 25, обязательное поле, автофокус на данном поле <br>
+           <input type="text" name="Data2" maxlength="20" pattern="[А-Яа-я]{1,20}" required placeholder="Имя"> text: Только кирилица, без пробелов, длина поля 20, обязательное поле <br> 
+           <input type="text" name="Data3" maxlength="24" pattern="[А-Яа-я]{1,24}" required placeholder="Отчество"> text: Только кирилица, без пробелов, блина поля 24, обязательное поле <br>
+           <fieldset> 
+               <legend>Паспортные данные</legend>
+               text: Серия - только заглавные две латинские буквы с длиной 2 и максимальныи количеством символов 2, количество букв не менее 2, обязательное поле <br>
+               text: Номер паспорта - только цфры с длиной 7 и максимальным количеством символов 7, количество цифр не менее 7, обязательное поле <br>
+               <input type="text" name="Data4" maxlength="2" pattern="[A-Z]{1,2}" required placeholder="AA">
+               <input type="text" name="Data5" maxlength="7" pattern="[0-9]{7}" required placeholder="1234567">
+           </fieldset>
+           <fieldset>
+               <legend>Дата рождения</legend>
+               <input type="text" name="Data6" max="4" pattern="[0-9]{4}" placeholder="2000"> text: Год рождения 4-е цифры <br>
+               <select name="Data7">
+                   <option value="1">Январь</option>
+                   <option value="2">Февраль</option>
+                   <option value="3">Март</option>
+                   <option value="4">Апрель</option>
+                   <option value="5">Май</option>
+                   <option value="6">Июнь</option>
+                   <option value="7">Июль</option>
+                   <option value="8">Август</option>
+                   <option value="9">Сентябрь</option>
+                   <option value="10">Октябрь</option>
+                   <option value="11">Ноябрь</option>
+                   <option value="12">Декабрь</option>
+               </select> select: Месяц рождения <br>
+               <input type="number" name="Data8" min="1" max="31" step="1"> number: Диапазон от 1 до 31 с шагом 1     
+           </fieldset>
+           <select name="Data8" required>
+               <option value="1">РБ</option>
+               <option value="2">Италия</option>
+               <option value="3">Франция</option>
+               <option value="4">Германия</option>
+           </select> (Национальность - выбор одного значения из списка, обязательное поле) <br>
+           Адрес: <br>
+           <textarea name="Data9" cols="25" rows="3"></textarea>
+       </fieldset> 
+       <fieldset>
+           <legend>array: Хобби</legend>
+           <label><input type="checkbox" name="Data10_1"></label>Рыбалка<br>
+           <label><input type="checkbox" name="Data10_2"></label>Астраномия<br>
+           <label><input type="checkbox" name="Data10_3"></label>Дайвинг<br>
+           <label><input type="checkbox" name="Data10_4"></label>Марки<br>
+       </fieldset>
+       <fieldset>
+           <legend>Домашние животные (возможность выбора нескольких вариантов):</legend>
+           array: select multiple <br>
+           <select name="Data11" size="12" multiple>
+                <optgroup label="Попугаи">
+                   <option value="11_1">Волнистый</option>
+                   <option value="11_2">Ара</option>
+                   <option value="11_3">Неразлучник</option>
+                </optgroup>   
+                <optgroup label="Рыбы"> 
+                   <option value="11_4">Караси</option>
+                   <option value="11_5">Окуни</option>
+                   <option value="11_6">Осётр</option>
+                </optgroup>
+               <optgroup label="Птицы"> 
+                   <option value="11_7">Стая ворон</option>
+                   <option value="11_8">Аист</option>
+                   <option value="11_9">Археоптерикс</option>
+                </optgroup>
+           </select>
+       </fieldset>
+       <fieldset>
+           <legend>Данные для входа и восстановление пароля</legend>
+           <input type="text" name="Data12" maxlength="20" pattern="[A-Za-z]{1,5}" required placeholder="Логин">
+           text: Только латиница, без пробелов, не менее 5 символов, длина поля 20, обязательное поле <br>
+           <input type="password" name="Data13" maxlength="20" pattern="[A-Za-z}{10.}" required autocomplete="off" placeholder="Пароль"> 
+           password: Только латиница, без пробелов, не менее 10 символов, длина поля 20, обязательное поле, отключить автозаполнение 
+       </fieldset>
+       <fieldset>
+           <legend>Координаты:</legend>
+           <input type="email" name="Data14" placeholder="введите адрес почты"> 
+           email: проверка должна осуществляться при помощи новых атрибутов тега input <br>
+           <input type="url" name="Data15" placeholder="введите адрес сайта">
+           url: проверка должна осуществляться при помощи новых атрибутов тега input <br> 
+       </fieldset>
+       <fieldset>
+           <legend>Цифры</legend>
+           <input type="number" name="Data16" min="-2.5" max="2.5" step="0.1">
+           number: Диапазон от -2.5 до 2.5 с шагом 0.1 <br>
+           <input type="range" min="1" max="10"> 
+           range: Максимальное 10 минимальное 1
+       </fieldset>
+       <fieldset>
+           <legend>Кнопки управления</legend>
+           <input type="submit" name="Data17">
+           <input type="reset" name="Data18"> <br>
+           <button><img src="data:image/jpeg;base64,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" alt=""> </button>
+           - при нажатии на эту кнопку ничего не происходит
+       </fieldset>
+    </form>
+</body>
+</html>
