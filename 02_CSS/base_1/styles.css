@@ -1,0 +1,108 @@
+.style1 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -430px -1390px;
+    float: left;
+}
+
+.style2 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: 0px -993px;
+    float: left;
+}
+
+.style3 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -290px -1390px;
+    float: left;
+}  
+
+
+.style4 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -145px -1988px;
+    float: left;
+}
+
+.style5{ 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: 0px -2188px;
+    float: left;
+}
+
+.add{
+    height: 50px;
+    clear: both;
+    
+}
+
+.style6 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -430px -1390px;
+    float: left;
+    margin-top: 20px;
+    
+  
+}
+
+.style7 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: 0px -993px;
+    float: left;
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.style8 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -290px -1390px;
+    float: left;
+    margin-left: -30px;
+    margin-top: 60px;
+}  
+
+
+.style9 { 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: -145px -1988px;
+    float: left;
+    margin-left: -30px;
+    margin-top: 80px;
+}
+
+.style10{ 
+    width: 140px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-image: url(cards.png);
+    background-position: 0px -2188px;
+    float: left;
+    margin-left: -30px;
+    margin-top: 100px;
+}
